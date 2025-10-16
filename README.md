@@ -2,7 +2,7 @@
 
 Generated app for:
 
-> Update the previous Hello World page by adding fade-in animation for text and a toggle button to switch between blue and red colors using inline CSS/JS.
+> Update the previous Hello World page by adding fade-in animation and a toggle button switching between blue and red.
 
 ---
 MIT License

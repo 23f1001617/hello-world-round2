@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World with Animation and Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 50px;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .toggle-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="fade-in">Hello World!</h1>
+    <button class="toggle-button" onclick="toggleColor()">Toggle Color</button>
+
+    <script>
+        let isBlue = true;
+
+        function toggleColor() {
+            if (isBlue) {
+                document.body.style.backgroundColor = 'red';
+                document.body.style.color = 'white';
+            } else {
+                document.body.style.backgroundColor = 'blue';
+                document.body.style.color = 'white';
+            }
+            isBlue = !isBlue;
+        }
+
+        // Fade-in effect on load
+        window.onload = function() {
+            document.querySelector('.fade-in').style.opacity = 1;
+        };
+    </script>
+    <!-- build-id: 2023-10-05T12:00:00Z -->
+</body>
+</html>
+<!-- build-id: 2025-10-16T12:10:35.464594 -->
